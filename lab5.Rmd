@@ -27,6 +27,15 @@ library(tidymodels)
 
 Client ID and Client Secret are required to create and access token that is required to interact with the API. You can set them as system values so we don't have to do provide them each time.
 
+```{r}
+
+Sys.setenv(SPOTIFY_CLIENT_ID = "9ce798ee305041ddbb318b62aec6def7")
+Sys.setenv(SPOTIFY_CLIENT_SECRET = "42fb5974467c4162871b397da738a104")
+
+access_token <- get_spotify_access_token()
+
+```
+
 Sys.setenv(SPOTIFY_CLIENT_ID = '2e066a0ebf86473990f30eee626c4ab9') Sys.setenv(SPOTIFY_CLIENT_SECRET = 'bb6735cb728a42089e0cc02680c97844')
 
 access_token \<- get_spotify_access_token() #takes ID and SECRET, sends to Spotify and receives an access token
@@ -41,7 +50,61 @@ access_token \<- get_spotify_access_token() #takes ID and SECRET, sends to Spoti
 
 You can use get_my_saved_tracks() to request all your liked tracks. It would be good if you had at least 150-200 liked tracks so the model has enough data to work with. If you don't have enough liked tracks, you can instead use get_my_recently_played(), and in that case grab at least 500 recently played tracks if you can.
 
-The Spotify API returns a dataframe of tracks and associated attributes. However, it will only return up to 50 (or 20) tracks at a time, so you will have to make multiple requests. Use a function to combine all your requests in one call.
+```{r}
+test<- data.frame(get_my_saved_tracks())
+test2 <- get_my_saved_tracks()
+
+class(test)
+
+test$track.name
+test$track.album.name
+first <- test$track.artists
+first[3,1]
+
+test$track.id
+
+
+join <- rbind(test,test2)
+
+```
+
+
+The Spotify API returns a data frame of tracks and associated attributes. However, it will only return up to 50 (or 20) tracks at a time, so you will have to make multiple requests. Use a function to combine all your requests in one call.
+
+```{r}
+# Create the function
+
+
+get_javier_tracks <- function(number) {
+  x <- number/20
+  total_tracks <- data.frame()
+  
+  for (i in 1:x) {
+    new_tracks <- get_my_saved_tracks()
+    total_tracks <- rbind(total_tracks,new_tracks)
+  }
+  
+  returnValue(total_tracks)
+}
+
+get_javier_tracks(400)
+
+
+```
+
+
+```{r}
+
+df <- data.frame()
+
+for(i in 1:3){
+  model <- get_my_saved_tracks()
+  df = rbind(df,model)
+}
+
+```
+
+
 
 Once you have your tracks, familiarize yourself with this initial dataframe. You'll need to request some additional information for the analysis. If you give the API a list of track IDs using get_track_audio_features(), it will return an audio features dataframe of all the tracks and some attributes of them.
 
