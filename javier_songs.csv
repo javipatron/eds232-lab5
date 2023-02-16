@@ -1,101 +1,101 @@
-"id","name","danceability","energy","key","loudness","mode","speechiness","acousticness","instrumentalness","liveness","valence","tempo","duration_ms","time_signature"
-"0b7p3kryLGENxN71B35ptm","The Night King",0.182,0.0651,10,-16.341,1,0.0462,0.942,0.886,0.111,0.038,60.812,530532,4
-"0n28PXtudWAJzjDqNczdS6","Water",0.276,0.113,3,-20.611,1,0.0346,0.96,0.95,0.0931,0.211,132.911,192000,3
-"6FNdzxV9g4NaINrejBTPUi","Pelota",0.688,0.646,9,-11.76,0,0.0539,0.0495,0.398,0.0834,0.961,103.86,167973,4
-"16uFiFTRR1KSJ6JyeXesBI","Goin' Up The Country - Re-Recorded",0.569,0.621,10,-9.879,1,0.0546,0.772,0.000878,0.105,0.634,149.03,191373,4
-"4hVgzGnQ6TtV3vqPgb4LhY","8 Pièces brèves, Op. 84: No. 5, Improvisation in C-Sharp Minor",0.363,0.0438,6,-26.46,0,0.0526,0.995,0.904,0.103,0.0469,70.071,120493,3
-"1KeJxSvW6pLU1ieRfQOMca","Polovetsian Dances from Prince Igor: Introduzione",0.157,0.0553,9,-23.391,1,0.0381,0.984,0.8,0.107,0.0421,83.299,136960,4
-"7IeKiZrctiSoHC336rUmkI","The Four Seasons, Concerto No.2 in G minor ""Summer"": III. Presto (Excerpt)",0.572,0.529,7,-11.24,1,0.0346,0.752,0.902,0.132,0.488,130.149,143241,3
-"7BHPGtpuuWWsvE7cCaMuEU","Naive",0.391,0.808,8,-6.209,0,0.0892,0.0759,0,0.149,0.737,100.304,203507,4
-"6ZygaqgtPkiahkiYJhYWhn","Seaside",0.629,0.422,10,-8.542,0,0.0411,0.705,0,0.124,0.325,129.456,99227,4
-"5xoUgPXbMNUmoHU0Enwtwq","She Moves In Her Own Way",0.41,0.803,7,-5.363,1,0.0623,0.239,0,0.103,0.814,153.315,169307,4
-"2q9udNV9NK0BL3q9p6TLxf","Procura",0.805,0.757,8,-7.46,1,0.0355,0.279,0.000839,0.101,0.973,102.14,271031,4
-"0e7ipj03S05BNilyu5bRzt","rockstar (feat. 21 Savage)",0.585,0.52,5,-6.136,0,0.0712,0.124,7.01e-05,0.131,0.129,159.801,218147,4
-"4Sfa7hdVkqlM8UW5LsSY3F","Take a Walk",0.566,0.755,11,-5.526,1,0.0368,0.0338,0,0.315,0.445,101.006,264493,4
-"2LsbizbOeNa4x6qsi2jAMb","La flaca",0.871,0.481,7,-9.068,1,0.0383,0.52,5.54e-05,0.0809,0.664,103.063,261200,4
-"0BiS57M0yGU3DzDGmhLT1a","Kourou",0.698,0.867,2,-7.587,0,0.0508,0.0836,0.019,0.358,0.852,90.458,291586,3
-"0L2Q17joitlk1BxqKbbUyM","After Midnight",0.652,0.31,2,-13.865,0,0.0324,0.526,0.686,0.115,0.294,131.973,283107,4
-"23dzk1h4DSdnwCzbsoLshb","Si Fuera Imposible",0.634,0.352,9,-12.631,1,0.0314,0.691,0.139,0.112,0.193,57.487,247381,4
-"0eTHlx53lUn95HVsJtR6Qx","Dixie Chicken",0.566,0.669,9,-10.081,1,0.0694,0.7,0.0654,0.588,0.92,149.702,239107,4
-"4CwpuCZcK6Vym6BZd8Pgfe","Two Trains",0.631,0.755,5,-7.65,0,0.0573,0.518,0.000864,0.0629,0.763,95.364,187267,4
-"6hUjJVFCWO2vJphmXKF7aE","Outta My Mind",0.579,0.713,2,-10.006,0,0.0354,0.366,0.472,0.189,0.943,180.031,169187,4
-"0b7p3kryLGENxN71B35ptm","The Night King",0.182,0.0651,10,-16.341,1,0.0462,0.942,0.886,0.111,0.038,60.812,530532,4
-"0n28PXtudWAJzjDqNczdS6","Water",0.276,0.113,3,-20.611,1,0.0346,0.96,0.95,0.0931,0.211,132.911,192000,3
-"6FNdzxV9g4NaINrejBTPUi","Pelota",0.688,0.646,9,-11.76,0,0.0539,0.0495,0.398,0.0834,0.961,103.86,167973,4
-"16uFiFTRR1KSJ6JyeXesBI","Goin' Up The Country - Re-Recorded",0.569,0.621,10,-9.879,1,0.0546,0.772,0.000878,0.105,0.634,149.03,191373,4
-"4hVgzGnQ6TtV3vqPgb4LhY","8 Pièces brèves, Op. 84: No. 5, Improvisation in C-Sharp Minor",0.363,0.0438,6,-26.46,0,0.0526,0.995,0.904,0.103,0.0469,70.071,120493,3
-"1KeJxSvW6pLU1ieRfQOMca","Polovetsian Dances from Prince Igor: Introduzione",0.157,0.0553,9,-23.391,1,0.0381,0.984,0.8,0.107,0.0421,83.299,136960,4
-"7IeKiZrctiSoHC336rUmkI","The Four Seasons, Concerto No.2 in G minor ""Summer"": III. Presto (Excerpt)",0.572,0.529,7,-11.24,1,0.0346,0.752,0.902,0.132,0.488,130.149,143241,3
-"7BHPGtpuuWWsvE7cCaMuEU","Naive",0.391,0.808,8,-6.209,0,0.0892,0.0759,0,0.149,0.737,100.304,203507,4
-"6ZygaqgtPkiahkiYJhYWhn","Seaside",0.629,0.422,10,-8.542,0,0.0411,0.705,0,0.124,0.325,129.456,99227,4
-"5xoUgPXbMNUmoHU0Enwtwq","She Moves In Her Own Way",0.41,0.803,7,-5.363,1,0.0623,0.239,0,0.103,0.814,153.315,169307,4
-"2q9udNV9NK0BL3q9p6TLxf","Procura",0.805,0.757,8,-7.46,1,0.0355,0.279,0.000839,0.101,0.973,102.14,271031,4
-"0e7ipj03S05BNilyu5bRzt","rockstar (feat. 21 Savage)",0.585,0.52,5,-6.136,0,0.0712,0.124,7.01e-05,0.131,0.129,159.801,218147,4
-"4Sfa7hdVkqlM8UW5LsSY3F","Take a Walk",0.566,0.755,11,-5.526,1,0.0368,0.0338,0,0.315,0.445,101.006,264493,4
-"2LsbizbOeNa4x6qsi2jAMb","La flaca",0.871,0.481,7,-9.068,1,0.0383,0.52,5.54e-05,0.0809,0.664,103.063,261200,4
-"0BiS57M0yGU3DzDGmhLT1a","Kourou",0.698,0.867,2,-7.587,0,0.0508,0.0836,0.019,0.358,0.852,90.458,291586,3
-"0L2Q17joitlk1BxqKbbUyM","After Midnight",0.652,0.31,2,-13.865,0,0.0324,0.526,0.686,0.115,0.294,131.973,283107,4
-"23dzk1h4DSdnwCzbsoLshb","Si Fuera Imposible",0.634,0.352,9,-12.631,1,0.0314,0.691,0.139,0.112,0.193,57.487,247381,4
-"0eTHlx53lUn95HVsJtR6Qx","Dixie Chicken",0.566,0.669,9,-10.081,1,0.0694,0.7,0.0654,0.588,0.92,149.702,239107,4
-"4CwpuCZcK6Vym6BZd8Pgfe","Two Trains",0.631,0.755,5,-7.65,0,0.0573,0.518,0.000864,0.0629,0.763,95.364,187267,4
-"6hUjJVFCWO2vJphmXKF7aE","Outta My Mind",0.579,0.713,2,-10.006,0,0.0354,0.366,0.472,0.189,0.943,180.031,169187,4
-"0b7p3kryLGENxN71B35ptm","The Night King",0.182,0.0651,10,-16.341,1,0.0462,0.942,0.886,0.111,0.038,60.812,530532,4
-"0n28PXtudWAJzjDqNczdS6","Water",0.276,0.113,3,-20.611,1,0.0346,0.96,0.95,0.0931,0.211,132.911,192000,3
-"6FNdzxV9g4NaINrejBTPUi","Pelota",0.688,0.646,9,-11.76,0,0.0539,0.0495,0.398,0.0834,0.961,103.86,167973,4
-"16uFiFTRR1KSJ6JyeXesBI","Goin' Up The Country - Re-Recorded",0.569,0.621,10,-9.879,1,0.0546,0.772,0.000878,0.105,0.634,149.03,191373,4
-"4hVgzGnQ6TtV3vqPgb4LhY","8 Pièces brèves, Op. 84: No. 5, Improvisation in C-Sharp Minor",0.363,0.0438,6,-26.46,0,0.0526,0.995,0.904,0.103,0.0469,70.071,120493,3
-"1KeJxSvW6pLU1ieRfQOMca","Polovetsian Dances from Prince Igor: Introduzione",0.157,0.0553,9,-23.391,1,0.0381,0.984,0.8,0.107,0.0421,83.299,136960,4
-"7IeKiZrctiSoHC336rUmkI","The Four Seasons, Concerto No.2 in G minor ""Summer"": III. Presto (Excerpt)",0.572,0.529,7,-11.24,1,0.0346,0.752,0.902,0.132,0.488,130.149,143241,3
-"7BHPGtpuuWWsvE7cCaMuEU","Naive",0.391,0.808,8,-6.209,0,0.0892,0.0759,0,0.149,0.737,100.304,203507,4
-"6ZygaqgtPkiahkiYJhYWhn","Seaside",0.629,0.422,10,-8.542,0,0.0411,0.705,0,0.124,0.325,129.456,99227,4
-"5xoUgPXbMNUmoHU0Enwtwq","She Moves In Her Own Way",0.41,0.803,7,-5.363,1,0.0623,0.239,0,0.103,0.814,153.315,169307,4
-"2q9udNV9NK0BL3q9p6TLxf","Procura",0.805,0.757,8,-7.46,1,0.0355,0.279,0.000839,0.101,0.973,102.14,271031,4
-"0e7ipj03S05BNilyu5bRzt","rockstar (feat. 21 Savage)",0.585,0.52,5,-6.136,0,0.0712,0.124,7.01e-05,0.131,0.129,159.801,218147,4
-"4Sfa7hdVkqlM8UW5LsSY3F","Take a Walk",0.566,0.755,11,-5.526,1,0.0368,0.0338,0,0.315,0.445,101.006,264493,4
-"2LsbizbOeNa4x6qsi2jAMb","La flaca",0.871,0.481,7,-9.068,1,0.0383,0.52,5.54e-05,0.0809,0.664,103.063,261200,4
-"0BiS57M0yGU3DzDGmhLT1a","Kourou",0.698,0.867,2,-7.587,0,0.0508,0.0836,0.019,0.358,0.852,90.458,291586,3
-"0L2Q17joitlk1BxqKbbUyM","After Midnight",0.652,0.31,2,-13.865,0,0.0324,0.526,0.686,0.115,0.294,131.973,283107,4
-"23dzk1h4DSdnwCzbsoLshb","Si Fuera Imposible",0.634,0.352,9,-12.631,1,0.0314,0.691,0.139,0.112,0.193,57.487,247381,4
-"0eTHlx53lUn95HVsJtR6Qx","Dixie Chicken",0.566,0.669,9,-10.081,1,0.0694,0.7,0.0654,0.588,0.92,149.702,239107,4
-"4CwpuCZcK6Vym6BZd8Pgfe","Two Trains",0.631,0.755,5,-7.65,0,0.0573,0.518,0.000864,0.0629,0.763,95.364,187267,4
-"6hUjJVFCWO2vJphmXKF7aE","Outta My Mind",0.579,0.713,2,-10.006,0,0.0354,0.366,0.472,0.189,0.943,180.031,169187,4
-"0b7p3kryLGENxN71B35ptm","The Night King",0.182,0.0651,10,-16.341,1,0.0462,0.942,0.886,0.111,0.038,60.812,530532,4
-"0n28PXtudWAJzjDqNczdS6","Water",0.276,0.113,3,-20.611,1,0.0346,0.96,0.95,0.0931,0.211,132.911,192000,3
-"6FNdzxV9g4NaINrejBTPUi","Pelota",0.688,0.646,9,-11.76,0,0.0539,0.0495,0.398,0.0834,0.961,103.86,167973,4
-"16uFiFTRR1KSJ6JyeXesBI","Goin' Up The Country - Re-Recorded",0.569,0.621,10,-9.879,1,0.0546,0.772,0.000878,0.105,0.634,149.03,191373,4
-"4hVgzGnQ6TtV3vqPgb4LhY","8 Pièces brèves, Op. 84: No. 5, Improvisation in C-Sharp Minor",0.363,0.0438,6,-26.46,0,0.0526,0.995,0.904,0.103,0.0469,70.071,120493,3
-"1KeJxSvW6pLU1ieRfQOMca","Polovetsian Dances from Prince Igor: Introduzione",0.157,0.0553,9,-23.391,1,0.0381,0.984,0.8,0.107,0.0421,83.299,136960,4
-"7IeKiZrctiSoHC336rUmkI","The Four Seasons, Concerto No.2 in G minor ""Summer"": III. Presto (Excerpt)",0.572,0.529,7,-11.24,1,0.0346,0.752,0.902,0.132,0.488,130.149,143241,3
-"7BHPGtpuuWWsvE7cCaMuEU","Naive",0.391,0.808,8,-6.209,0,0.0892,0.0759,0,0.149,0.737,100.304,203507,4
-"6ZygaqgtPkiahkiYJhYWhn","Seaside",0.629,0.422,10,-8.542,0,0.0411,0.705,0,0.124,0.325,129.456,99227,4
-"5xoUgPXbMNUmoHU0Enwtwq","She Moves In Her Own Way",0.41,0.803,7,-5.363,1,0.0623,0.239,0,0.103,0.814,153.315,169307,4
-"2q9udNV9NK0BL3q9p6TLxf","Procura",0.805,0.757,8,-7.46,1,0.0355,0.279,0.000839,0.101,0.973,102.14,271031,4
-"0e7ipj03S05BNilyu5bRzt","rockstar (feat. 21 Savage)",0.585,0.52,5,-6.136,0,0.0712,0.124,7.01e-05,0.131,0.129,159.801,218147,4
-"4Sfa7hdVkqlM8UW5LsSY3F","Take a Walk",0.566,0.755,11,-5.526,1,0.0368,0.0338,0,0.315,0.445,101.006,264493,4
-"2LsbizbOeNa4x6qsi2jAMb","La flaca",0.871,0.481,7,-9.068,1,0.0383,0.52,5.54e-05,0.0809,0.664,103.063,261200,4
-"0BiS57M0yGU3DzDGmhLT1a","Kourou",0.698,0.867,2,-7.587,0,0.0508,0.0836,0.019,0.358,0.852,90.458,291586,3
-"0L2Q17joitlk1BxqKbbUyM","After Midnight",0.652,0.31,2,-13.865,0,0.0324,0.526,0.686,0.115,0.294,131.973,283107,4
-"23dzk1h4DSdnwCzbsoLshb","Si Fuera Imposible",0.634,0.352,9,-12.631,1,0.0314,0.691,0.139,0.112,0.193,57.487,247381,4
-"0eTHlx53lUn95HVsJtR6Qx","Dixie Chicken",0.566,0.669,9,-10.081,1,0.0694,0.7,0.0654,0.588,0.92,149.702,239107,4
-"4CwpuCZcK6Vym6BZd8Pgfe","Two Trains",0.631,0.755,5,-7.65,0,0.0573,0.518,0.000864,0.0629,0.763,95.364,187267,4
-"6hUjJVFCWO2vJphmXKF7aE","Outta My Mind",0.579,0.713,2,-10.006,0,0.0354,0.366,0.472,0.189,0.943,180.031,169187,4
-"0b7p3kryLGENxN71B35ptm","The Night King",0.182,0.0651,10,-16.341,1,0.0462,0.942,0.886,0.111,0.038,60.812,530532,4
-"0n28PXtudWAJzjDqNczdS6","Water",0.276,0.113,3,-20.611,1,0.0346,0.96,0.95,0.0931,0.211,132.911,192000,3
-"6FNdzxV9g4NaINrejBTPUi","Pelota",0.688,0.646,9,-11.76,0,0.0539,0.0495,0.398,0.0834,0.961,103.86,167973,4
-"16uFiFTRR1KSJ6JyeXesBI","Goin' Up The Country - Re-Recorded",0.569,0.621,10,-9.879,1,0.0546,0.772,0.000878,0.105,0.634,149.03,191373,4
-"4hVgzGnQ6TtV3vqPgb4LhY","8 Pièces brèves, Op. 84: No. 5, Improvisation in C-Sharp Minor",0.363,0.0438,6,-26.46,0,0.0526,0.995,0.904,0.103,0.0469,70.071,120493,3
-"1KeJxSvW6pLU1ieRfQOMca","Polovetsian Dances from Prince Igor: Introduzione",0.157,0.0553,9,-23.391,1,0.0381,0.984,0.8,0.107,0.0421,83.299,136960,4
-"7IeKiZrctiSoHC336rUmkI","The Four Seasons, Concerto No.2 in G minor ""Summer"": III. Presto (Excerpt)",0.572,0.529,7,-11.24,1,0.0346,0.752,0.902,0.132,0.488,130.149,143241,3
-"7BHPGtpuuWWsvE7cCaMuEU","Naive",0.391,0.808,8,-6.209,0,0.0892,0.0759,0,0.149,0.737,100.304,203507,4
-"6ZygaqgtPkiahkiYJhYWhn","Seaside",0.629,0.422,10,-8.542,0,0.0411,0.705,0,0.124,0.325,129.456,99227,4
-"5xoUgPXbMNUmoHU0Enwtwq","She Moves In Her Own Way",0.41,0.803,7,-5.363,1,0.0623,0.239,0,0.103,0.814,153.315,169307,4
-"2q9udNV9NK0BL3q9p6TLxf","Procura",0.805,0.757,8,-7.46,1,0.0355,0.279,0.000839,0.101,0.973,102.14,271031,4
-"0e7ipj03S05BNilyu5bRzt","rockstar (feat. 21 Savage)",0.585,0.52,5,-6.136,0,0.0712,0.124,7.01e-05,0.131,0.129,159.801,218147,4
-"4Sfa7hdVkqlM8UW5LsSY3F","Take a Walk",0.566,0.755,11,-5.526,1,0.0368,0.0338,0,0.315,0.445,101.006,264493,4
-"2LsbizbOeNa4x6qsi2jAMb","La flaca",0.871,0.481,7,-9.068,1,0.0383,0.52,5.54e-05,0.0809,0.664,103.063,261200,4
-"0BiS57M0yGU3DzDGmhLT1a","Kourou",0.698,0.867,2,-7.587,0,0.0508,0.0836,0.019,0.358,0.852,90.458,291586,3
-"0L2Q17joitlk1BxqKbbUyM","After Midnight",0.652,0.31,2,-13.865,0,0.0324,0.526,0.686,0.115,0.294,131.973,283107,4
-"23dzk1h4DSdnwCzbsoLshb","Si Fuera Imposible",0.634,0.352,9,-12.631,1,0.0314,0.691,0.139,0.112,0.193,57.487,247381,4
-"0eTHlx53lUn95HVsJtR6Qx","Dixie Chicken",0.566,0.669,9,-10.081,1,0.0694,0.7,0.0654,0.588,0.92,149.702,239107,4
-"4CwpuCZcK6Vym6BZd8Pgfe","Two Trains",0.631,0.755,5,-7.65,0,0.0573,0.518,0.000864,0.0629,0.763,95.364,187267,4
-"6hUjJVFCWO2vJphmXKF7aE","Outta My Mind",0.579,0.713,2,-10.006,0,0.0354,0.366,0.472,0.189,0.943,180.031,169187,4
+"danceability","energy","key","loudness","mode","speechiness","acousticness","instrumentalness","liveness","valence","tempo","type","id","uri","track_href","analysis_url","duration_ms","time_signature"
+0.182,0.0651,10,-16.341,1,0.0462,0.942,0.886,0.111,0.038,60.812,"audio_features","0b7p3kryLGENxN71B35ptm","spotify:track:0b7p3kryLGENxN71B35ptm","https://api.spotify.com/v1/tracks/0b7p3kryLGENxN71B35ptm","https://api.spotify.com/v1/audio-analysis/0b7p3kryLGENxN71B35ptm",530532,4
+0.276,0.113,3,-20.611,1,0.0346,0.96,0.95,0.0931,0.211,132.911,"audio_features","0n28PXtudWAJzjDqNczdS6","spotify:track:0n28PXtudWAJzjDqNczdS6","https://api.spotify.com/v1/tracks/0n28PXtudWAJzjDqNczdS6","https://api.spotify.com/v1/audio-analysis/0n28PXtudWAJzjDqNczdS6",192000,3
+0.688,0.646,9,-11.76,0,0.0539,0.0495,0.398,0.0834,0.961,103.86,"audio_features","6FNdzxV9g4NaINrejBTPUi","spotify:track:6FNdzxV9g4NaINrejBTPUi","https://api.spotify.com/v1/tracks/6FNdzxV9g4NaINrejBTPUi","https://api.spotify.com/v1/audio-analysis/6FNdzxV9g4NaINrejBTPUi",167973,4
+0.569,0.621,10,-9.879,1,0.0546,0.772,0.000878,0.105,0.634,149.03,"audio_features","16uFiFTRR1KSJ6JyeXesBI","spotify:track:16uFiFTRR1KSJ6JyeXesBI","https://api.spotify.com/v1/tracks/16uFiFTRR1KSJ6JyeXesBI","https://api.spotify.com/v1/audio-analysis/16uFiFTRR1KSJ6JyeXesBI",191373,4
+0.363,0.0438,6,-26.46,0,0.0526,0.995,0.904,0.103,0.0469,70.071,"audio_features","4hVgzGnQ6TtV3vqPgb4LhY","spotify:track:4hVgzGnQ6TtV3vqPgb4LhY","https://api.spotify.com/v1/tracks/4hVgzGnQ6TtV3vqPgb4LhY","https://api.spotify.com/v1/audio-analysis/4hVgzGnQ6TtV3vqPgb4LhY",120493,3
+0.157,0.0553,9,-23.391,1,0.0381,0.984,0.8,0.107,0.0421,83.299,"audio_features","1KeJxSvW6pLU1ieRfQOMca","spotify:track:1KeJxSvW6pLU1ieRfQOMca","https://api.spotify.com/v1/tracks/1KeJxSvW6pLU1ieRfQOMca","https://api.spotify.com/v1/audio-analysis/1KeJxSvW6pLU1ieRfQOMca",136960,4
+0.572,0.529,7,-11.24,1,0.0346,0.752,0.902,0.132,0.488,130.149,"audio_features","7IeKiZrctiSoHC336rUmkI","spotify:track:7IeKiZrctiSoHC336rUmkI","https://api.spotify.com/v1/tracks/7IeKiZrctiSoHC336rUmkI","https://api.spotify.com/v1/audio-analysis/7IeKiZrctiSoHC336rUmkI",143241,3
+0.391,0.808,8,-6.209,0,0.0892,0.0759,0,0.149,0.737,100.304,"audio_features","7BHPGtpuuWWsvE7cCaMuEU","spotify:track:7BHPGtpuuWWsvE7cCaMuEU","https://api.spotify.com/v1/tracks/7BHPGtpuuWWsvE7cCaMuEU","https://api.spotify.com/v1/audio-analysis/7BHPGtpuuWWsvE7cCaMuEU",203507,4
+0.629,0.422,10,-8.542,0,0.0411,0.705,0,0.124,0.325,129.456,"audio_features","6ZygaqgtPkiahkiYJhYWhn","spotify:track:6ZygaqgtPkiahkiYJhYWhn","https://api.spotify.com/v1/tracks/6ZygaqgtPkiahkiYJhYWhn","https://api.spotify.com/v1/audio-analysis/6ZygaqgtPkiahkiYJhYWhn",99227,4
+0.41,0.803,7,-5.363,1,0.0623,0.239,0,0.103,0.814,153.315,"audio_features","5xoUgPXbMNUmoHU0Enwtwq","spotify:track:5xoUgPXbMNUmoHU0Enwtwq","https://api.spotify.com/v1/tracks/5xoUgPXbMNUmoHU0Enwtwq","https://api.spotify.com/v1/audio-analysis/5xoUgPXbMNUmoHU0Enwtwq",169307,4
+0.805,0.757,8,-7.46,1,0.0355,0.279,0.000839,0.101,0.973,102.14,"audio_features","2q9udNV9NK0BL3q9p6TLxf","spotify:track:2q9udNV9NK0BL3q9p6TLxf","https://api.spotify.com/v1/tracks/2q9udNV9NK0BL3q9p6TLxf","https://api.spotify.com/v1/audio-analysis/2q9udNV9NK0BL3q9p6TLxf",271031,4
+0.585,0.52,5,-6.136,0,0.0712,0.124,7.01e-05,0.131,0.129,159.801,"audio_features","0e7ipj03S05BNilyu5bRzt","spotify:track:0e7ipj03S05BNilyu5bRzt","https://api.spotify.com/v1/tracks/0e7ipj03S05BNilyu5bRzt","https://api.spotify.com/v1/audio-analysis/0e7ipj03S05BNilyu5bRzt",218147,4
+0.566,0.755,11,-5.526,1,0.0368,0.0338,0,0.315,0.445,101.006,"audio_features","4Sfa7hdVkqlM8UW5LsSY3F","spotify:track:4Sfa7hdVkqlM8UW5LsSY3F","https://api.spotify.com/v1/tracks/4Sfa7hdVkqlM8UW5LsSY3F","https://api.spotify.com/v1/audio-analysis/4Sfa7hdVkqlM8UW5LsSY3F",264493,4
+0.871,0.481,7,-9.068,1,0.0383,0.52,5.54e-05,0.0809,0.664,103.063,"audio_features","2LsbizbOeNa4x6qsi2jAMb","spotify:track:2LsbizbOeNa4x6qsi2jAMb","https://api.spotify.com/v1/tracks/2LsbizbOeNa4x6qsi2jAMb","https://api.spotify.com/v1/audio-analysis/2LsbizbOeNa4x6qsi2jAMb",261200,4
+0.698,0.867,2,-7.587,0,0.0508,0.0836,0.019,0.358,0.852,90.458,"audio_features","0BiS57M0yGU3DzDGmhLT1a","spotify:track:0BiS57M0yGU3DzDGmhLT1a","https://api.spotify.com/v1/tracks/0BiS57M0yGU3DzDGmhLT1a","https://api.spotify.com/v1/audio-analysis/0BiS57M0yGU3DzDGmhLT1a",291586,3
+0.652,0.31,2,-13.865,0,0.0324,0.526,0.686,0.115,0.294,131.973,"audio_features","0L2Q17joitlk1BxqKbbUyM","spotify:track:0L2Q17joitlk1BxqKbbUyM","https://api.spotify.com/v1/tracks/0L2Q17joitlk1BxqKbbUyM","https://api.spotify.com/v1/audio-analysis/0L2Q17joitlk1BxqKbbUyM",283107,4
+0.634,0.352,9,-12.631,1,0.0314,0.691,0.139,0.112,0.193,57.487,"audio_features","23dzk1h4DSdnwCzbsoLshb","spotify:track:23dzk1h4DSdnwCzbsoLshb","https://api.spotify.com/v1/tracks/23dzk1h4DSdnwCzbsoLshb","https://api.spotify.com/v1/audio-analysis/23dzk1h4DSdnwCzbsoLshb",247381,4
+0.566,0.669,9,-10.081,1,0.0694,0.7,0.0654,0.588,0.92,149.702,"audio_features","0eTHlx53lUn95HVsJtR6Qx","spotify:track:0eTHlx53lUn95HVsJtR6Qx","https://api.spotify.com/v1/tracks/0eTHlx53lUn95HVsJtR6Qx","https://api.spotify.com/v1/audio-analysis/0eTHlx53lUn95HVsJtR6Qx",239107,4
+0.631,0.755,5,-7.65,0,0.0573,0.518,0.000864,0.0629,0.763,95.364,"audio_features","4CwpuCZcK6Vym6BZd8Pgfe","spotify:track:4CwpuCZcK6Vym6BZd8Pgfe","https://api.spotify.com/v1/tracks/4CwpuCZcK6Vym6BZd8Pgfe","https://api.spotify.com/v1/audio-analysis/4CwpuCZcK6Vym6BZd8Pgfe",187267,4
+0.579,0.713,2,-10.006,0,0.0354,0.366,0.472,0.189,0.943,180.031,"audio_features","6hUjJVFCWO2vJphmXKF7aE","spotify:track:6hUjJVFCWO2vJphmXKF7aE","https://api.spotify.com/v1/tracks/6hUjJVFCWO2vJphmXKF7aE","https://api.spotify.com/v1/audio-analysis/6hUjJVFCWO2vJphmXKF7aE",169187,4
+0.182,0.0651,10,-16.341,1,0.0462,0.942,0.886,0.111,0.038,60.812,"audio_features","0b7p3kryLGENxN71B35ptm","spotify:track:0b7p3kryLGENxN71B35ptm","https://api.spotify.com/v1/tracks/0b7p3kryLGENxN71B35ptm","https://api.spotify.com/v1/audio-analysis/0b7p3kryLGENxN71B35ptm",530532,4
+0.276,0.113,3,-20.611,1,0.0346,0.96,0.95,0.0931,0.211,132.911,"audio_features","0n28PXtudWAJzjDqNczdS6","spotify:track:0n28PXtudWAJzjDqNczdS6","https://api.spotify.com/v1/tracks/0n28PXtudWAJzjDqNczdS6","https://api.spotify.com/v1/audio-analysis/0n28PXtudWAJzjDqNczdS6",192000,3
+0.688,0.646,9,-11.76,0,0.0539,0.0495,0.398,0.0834,0.961,103.86,"audio_features","6FNdzxV9g4NaINrejBTPUi","spotify:track:6FNdzxV9g4NaINrejBTPUi","https://api.spotify.com/v1/tracks/6FNdzxV9g4NaINrejBTPUi","https://api.spotify.com/v1/audio-analysis/6FNdzxV9g4NaINrejBTPUi",167973,4
+0.569,0.621,10,-9.879,1,0.0546,0.772,0.000878,0.105,0.634,149.03,"audio_features","16uFiFTRR1KSJ6JyeXesBI","spotify:track:16uFiFTRR1KSJ6JyeXesBI","https://api.spotify.com/v1/tracks/16uFiFTRR1KSJ6JyeXesBI","https://api.spotify.com/v1/audio-analysis/16uFiFTRR1KSJ6JyeXesBI",191373,4
+0.363,0.0438,6,-26.46,0,0.0526,0.995,0.904,0.103,0.0469,70.071,"audio_features","4hVgzGnQ6TtV3vqPgb4LhY","spotify:track:4hVgzGnQ6TtV3vqPgb4LhY","https://api.spotify.com/v1/tracks/4hVgzGnQ6TtV3vqPgb4LhY","https://api.spotify.com/v1/audio-analysis/4hVgzGnQ6TtV3vqPgb4LhY",120493,3
+0.157,0.0553,9,-23.391,1,0.0381,0.984,0.8,0.107,0.0421,83.299,"audio_features","1KeJxSvW6pLU1ieRfQOMca","spotify:track:1KeJxSvW6pLU1ieRfQOMca","https://api.spotify.com/v1/tracks/1KeJxSvW6pLU1ieRfQOMca","https://api.spotify.com/v1/audio-analysis/1KeJxSvW6pLU1ieRfQOMca",136960,4
+0.572,0.529,7,-11.24,1,0.0346,0.752,0.902,0.132,0.488,130.149,"audio_features","7IeKiZrctiSoHC336rUmkI","spotify:track:7IeKiZrctiSoHC336rUmkI","https://api.spotify.com/v1/tracks/7IeKiZrctiSoHC336rUmkI","https://api.spotify.com/v1/audio-analysis/7IeKiZrctiSoHC336rUmkI",143241,3
+0.391,0.808,8,-6.209,0,0.0892,0.0759,0,0.149,0.737,100.304,"audio_features","7BHPGtpuuWWsvE7cCaMuEU","spotify:track:7BHPGtpuuWWsvE7cCaMuEU","https://api.spotify.com/v1/tracks/7BHPGtpuuWWsvE7cCaMuEU","https://api.spotify.com/v1/audio-analysis/7BHPGtpuuWWsvE7cCaMuEU",203507,4
+0.629,0.422,10,-8.542,0,0.0411,0.705,0,0.124,0.325,129.456,"audio_features","6ZygaqgtPkiahkiYJhYWhn","spotify:track:6ZygaqgtPkiahkiYJhYWhn","https://api.spotify.com/v1/tracks/6ZygaqgtPkiahkiYJhYWhn","https://api.spotify.com/v1/audio-analysis/6ZygaqgtPkiahkiYJhYWhn",99227,4
+0.41,0.803,7,-5.363,1,0.0623,0.239,0,0.103,0.814,153.315,"audio_features","5xoUgPXbMNUmoHU0Enwtwq","spotify:track:5xoUgPXbMNUmoHU0Enwtwq","https://api.spotify.com/v1/tracks/5xoUgPXbMNUmoHU0Enwtwq","https://api.spotify.com/v1/audio-analysis/5xoUgPXbMNUmoHU0Enwtwq",169307,4
+0.805,0.757,8,-7.46,1,0.0355,0.279,0.000839,0.101,0.973,102.14,"audio_features","2q9udNV9NK0BL3q9p6TLxf","spotify:track:2q9udNV9NK0BL3q9p6TLxf","https://api.spotify.com/v1/tracks/2q9udNV9NK0BL3q9p6TLxf","https://api.spotify.com/v1/audio-analysis/2q9udNV9NK0BL3q9p6TLxf",271031,4
+0.585,0.52,5,-6.136,0,0.0712,0.124,7.01e-05,0.131,0.129,159.801,"audio_features","0e7ipj03S05BNilyu5bRzt","spotify:track:0e7ipj03S05BNilyu5bRzt","https://api.spotify.com/v1/tracks/0e7ipj03S05BNilyu5bRzt","https://api.spotify.com/v1/audio-analysis/0e7ipj03S05BNilyu5bRzt",218147,4
+0.566,0.755,11,-5.526,1,0.0368,0.0338,0,0.315,0.445,101.006,"audio_features","4Sfa7hdVkqlM8UW5LsSY3F","spotify:track:4Sfa7hdVkqlM8UW5LsSY3F","https://api.spotify.com/v1/tracks/4Sfa7hdVkqlM8UW5LsSY3F","https://api.spotify.com/v1/audio-analysis/4Sfa7hdVkqlM8UW5LsSY3F",264493,4
+0.871,0.481,7,-9.068,1,0.0383,0.52,5.54e-05,0.0809,0.664,103.063,"audio_features","2LsbizbOeNa4x6qsi2jAMb","spotify:track:2LsbizbOeNa4x6qsi2jAMb","https://api.spotify.com/v1/tracks/2LsbizbOeNa4x6qsi2jAMb","https://api.spotify.com/v1/audio-analysis/2LsbizbOeNa4x6qsi2jAMb",261200,4
+0.698,0.867,2,-7.587,0,0.0508,0.0836,0.019,0.358,0.852,90.458,"audio_features","0BiS57M0yGU3DzDGmhLT1a","spotify:track:0BiS57M0yGU3DzDGmhLT1a","https://api.spotify.com/v1/tracks/0BiS57M0yGU3DzDGmhLT1a","https://api.spotify.com/v1/audio-analysis/0BiS57M0yGU3DzDGmhLT1a",291586,3
+0.652,0.31,2,-13.865,0,0.0324,0.526,0.686,0.115,0.294,131.973,"audio_features","0L2Q17joitlk1BxqKbbUyM","spotify:track:0L2Q17joitlk1BxqKbbUyM","https://api.spotify.com/v1/tracks/0L2Q17joitlk1BxqKbbUyM","https://api.spotify.com/v1/audio-analysis/0L2Q17joitlk1BxqKbbUyM",283107,4
+0.634,0.352,9,-12.631,1,0.0314,0.691,0.139,0.112,0.193,57.487,"audio_features","23dzk1h4DSdnwCzbsoLshb","spotify:track:23dzk1h4DSdnwCzbsoLshb","https://api.spotify.com/v1/tracks/23dzk1h4DSdnwCzbsoLshb","https://api.spotify.com/v1/audio-analysis/23dzk1h4DSdnwCzbsoLshb",247381,4
+0.566,0.669,9,-10.081,1,0.0694,0.7,0.0654,0.588,0.92,149.702,"audio_features","0eTHlx53lUn95HVsJtR6Qx","spotify:track:0eTHlx53lUn95HVsJtR6Qx","https://api.spotify.com/v1/tracks/0eTHlx53lUn95HVsJtR6Qx","https://api.spotify.com/v1/audio-analysis/0eTHlx53lUn95HVsJtR6Qx",239107,4
+0.631,0.755,5,-7.65,0,0.0573,0.518,0.000864,0.0629,0.763,95.364,"audio_features","4CwpuCZcK6Vym6BZd8Pgfe","spotify:track:4CwpuCZcK6Vym6BZd8Pgfe","https://api.spotify.com/v1/tracks/4CwpuCZcK6Vym6BZd8Pgfe","https://api.spotify.com/v1/audio-analysis/4CwpuCZcK6Vym6BZd8Pgfe",187267,4
+0.579,0.713,2,-10.006,0,0.0354,0.366,0.472,0.189,0.943,180.031,"audio_features","6hUjJVFCWO2vJphmXKF7aE","spotify:track:6hUjJVFCWO2vJphmXKF7aE","https://api.spotify.com/v1/tracks/6hUjJVFCWO2vJphmXKF7aE","https://api.spotify.com/v1/audio-analysis/6hUjJVFCWO2vJphmXKF7aE",169187,4
+0.182,0.0651,10,-16.341,1,0.0462,0.942,0.886,0.111,0.038,60.812,"audio_features","0b7p3kryLGENxN71B35ptm","spotify:track:0b7p3kryLGENxN71B35ptm","https://api.spotify.com/v1/tracks/0b7p3kryLGENxN71B35ptm","https://api.spotify.com/v1/audio-analysis/0b7p3kryLGENxN71B35ptm",530532,4
+0.276,0.113,3,-20.611,1,0.0346,0.96,0.95,0.0931,0.211,132.911,"audio_features","0n28PXtudWAJzjDqNczdS6","spotify:track:0n28PXtudWAJzjDqNczdS6","https://api.spotify.com/v1/tracks/0n28PXtudWAJzjDqNczdS6","https://api.spotify.com/v1/audio-analysis/0n28PXtudWAJzjDqNczdS6",192000,3
+0.688,0.646,9,-11.76,0,0.0539,0.0495,0.398,0.0834,0.961,103.86,"audio_features","6FNdzxV9g4NaINrejBTPUi","spotify:track:6FNdzxV9g4NaINrejBTPUi","https://api.spotify.com/v1/tracks/6FNdzxV9g4NaINrejBTPUi","https://api.spotify.com/v1/audio-analysis/6FNdzxV9g4NaINrejBTPUi",167973,4
+0.569,0.621,10,-9.879,1,0.0546,0.772,0.000878,0.105,0.634,149.03,"audio_features","16uFiFTRR1KSJ6JyeXesBI","spotify:track:16uFiFTRR1KSJ6JyeXesBI","https://api.spotify.com/v1/tracks/16uFiFTRR1KSJ6JyeXesBI","https://api.spotify.com/v1/audio-analysis/16uFiFTRR1KSJ6JyeXesBI",191373,4
+0.363,0.0438,6,-26.46,0,0.0526,0.995,0.904,0.103,0.0469,70.071,"audio_features","4hVgzGnQ6TtV3vqPgb4LhY","spotify:track:4hVgzGnQ6TtV3vqPgb4LhY","https://api.spotify.com/v1/tracks/4hVgzGnQ6TtV3vqPgb4LhY","https://api.spotify.com/v1/audio-analysis/4hVgzGnQ6TtV3vqPgb4LhY",120493,3
+0.157,0.0553,9,-23.391,1,0.0381,0.984,0.8,0.107,0.0421,83.299,"audio_features","1KeJxSvW6pLU1ieRfQOMca","spotify:track:1KeJxSvW6pLU1ieRfQOMca","https://api.spotify.com/v1/tracks/1KeJxSvW6pLU1ieRfQOMca","https://api.spotify.com/v1/audio-analysis/1KeJxSvW6pLU1ieRfQOMca",136960,4
+0.572,0.529,7,-11.24,1,0.0346,0.752,0.902,0.132,0.488,130.149,"audio_features","7IeKiZrctiSoHC336rUmkI","spotify:track:7IeKiZrctiSoHC336rUmkI","https://api.spotify.com/v1/tracks/7IeKiZrctiSoHC336rUmkI","https://api.spotify.com/v1/audio-analysis/7IeKiZrctiSoHC336rUmkI",143241,3
+0.391,0.808,8,-6.209,0,0.0892,0.0759,0,0.149,0.737,100.304,"audio_features","7BHPGtpuuWWsvE7cCaMuEU","spotify:track:7BHPGtpuuWWsvE7cCaMuEU","https://api.spotify.com/v1/tracks/7BHPGtpuuWWsvE7cCaMuEU","https://api.spotify.com/v1/audio-analysis/7BHPGtpuuWWsvE7cCaMuEU",203507,4
+0.629,0.422,10,-8.542,0,0.0411,0.705,0,0.124,0.325,129.456,"audio_features","6ZygaqgtPkiahkiYJhYWhn","spotify:track:6ZygaqgtPkiahkiYJhYWhn","https://api.spotify.com/v1/tracks/6ZygaqgtPkiahkiYJhYWhn","https://api.spotify.com/v1/audio-analysis/6ZygaqgtPkiahkiYJhYWhn",99227,4
+0.41,0.803,7,-5.363,1,0.0623,0.239,0,0.103,0.814,153.315,"audio_features","5xoUgPXbMNUmoHU0Enwtwq","spotify:track:5xoUgPXbMNUmoHU0Enwtwq","https://api.spotify.com/v1/tracks/5xoUgPXbMNUmoHU0Enwtwq","https://api.spotify.com/v1/audio-analysis/5xoUgPXbMNUmoHU0Enwtwq",169307,4
+0.805,0.757,8,-7.46,1,0.0355,0.279,0.000839,0.101,0.973,102.14,"audio_features","2q9udNV9NK0BL3q9p6TLxf","spotify:track:2q9udNV9NK0BL3q9p6TLxf","https://api.spotify.com/v1/tracks/2q9udNV9NK0BL3q9p6TLxf","https://api.spotify.com/v1/audio-analysis/2q9udNV9NK0BL3q9p6TLxf",271031,4
+0.585,0.52,5,-6.136,0,0.0712,0.124,7.01e-05,0.131,0.129,159.801,"audio_features","0e7ipj03S05BNilyu5bRzt","spotify:track:0e7ipj03S05BNilyu5bRzt","https://api.spotify.com/v1/tracks/0e7ipj03S05BNilyu5bRzt","https://api.spotify.com/v1/audio-analysis/0e7ipj03S05BNilyu5bRzt",218147,4
+0.566,0.755,11,-5.526,1,0.0368,0.0338,0,0.315,0.445,101.006,"audio_features","4Sfa7hdVkqlM8UW5LsSY3F","spotify:track:4Sfa7hdVkqlM8UW5LsSY3F","https://api.spotify.com/v1/tracks/4Sfa7hdVkqlM8UW5LsSY3F","https://api.spotify.com/v1/audio-analysis/4Sfa7hdVkqlM8UW5LsSY3F",264493,4
+0.871,0.481,7,-9.068,1,0.0383,0.52,5.54e-05,0.0809,0.664,103.063,"audio_features","2LsbizbOeNa4x6qsi2jAMb","spotify:track:2LsbizbOeNa4x6qsi2jAMb","https://api.spotify.com/v1/tracks/2LsbizbOeNa4x6qsi2jAMb","https://api.spotify.com/v1/audio-analysis/2LsbizbOeNa4x6qsi2jAMb",261200,4
+0.698,0.867,2,-7.587,0,0.0508,0.0836,0.019,0.358,0.852,90.458,"audio_features","0BiS57M0yGU3DzDGmhLT1a","spotify:track:0BiS57M0yGU3DzDGmhLT1a","https://api.spotify.com/v1/tracks/0BiS57M0yGU3DzDGmhLT1a","https://api.spotify.com/v1/audio-analysis/0BiS57M0yGU3DzDGmhLT1a",291586,3
+0.652,0.31,2,-13.865,0,0.0324,0.526,0.686,0.115,0.294,131.973,"audio_features","0L2Q17joitlk1BxqKbbUyM","spotify:track:0L2Q17joitlk1BxqKbbUyM","https://api.spotify.com/v1/tracks/0L2Q17joitlk1BxqKbbUyM","https://api.spotify.com/v1/audio-analysis/0L2Q17joitlk1BxqKbbUyM",283107,4
+0.634,0.352,9,-12.631,1,0.0314,0.691,0.139,0.112,0.193,57.487,"audio_features","23dzk1h4DSdnwCzbsoLshb","spotify:track:23dzk1h4DSdnwCzbsoLshb","https://api.spotify.com/v1/tracks/23dzk1h4DSdnwCzbsoLshb","https://api.spotify.com/v1/audio-analysis/23dzk1h4DSdnwCzbsoLshb",247381,4
+0.566,0.669,9,-10.081,1,0.0694,0.7,0.0654,0.588,0.92,149.702,"audio_features","0eTHlx53lUn95HVsJtR6Qx","spotify:track:0eTHlx53lUn95HVsJtR6Qx","https://api.spotify.com/v1/tracks/0eTHlx53lUn95HVsJtR6Qx","https://api.spotify.com/v1/audio-analysis/0eTHlx53lUn95HVsJtR6Qx",239107,4
+0.631,0.755,5,-7.65,0,0.0573,0.518,0.000864,0.0629,0.763,95.364,"audio_features","4CwpuCZcK6Vym6BZd8Pgfe","spotify:track:4CwpuCZcK6Vym6BZd8Pgfe","https://api.spotify.com/v1/tracks/4CwpuCZcK6Vym6BZd8Pgfe","https://api.spotify.com/v1/audio-analysis/4CwpuCZcK6Vym6BZd8Pgfe",187267,4
+0.579,0.713,2,-10.006,0,0.0354,0.366,0.472,0.189,0.943,180.031,"audio_features","6hUjJVFCWO2vJphmXKF7aE","spotify:track:6hUjJVFCWO2vJphmXKF7aE","https://api.spotify.com/v1/tracks/6hUjJVFCWO2vJphmXKF7aE","https://api.spotify.com/v1/audio-analysis/6hUjJVFCWO2vJphmXKF7aE",169187,4
+0.182,0.0651,10,-16.341,1,0.0462,0.942,0.886,0.111,0.038,60.812,"audio_features","0b7p3kryLGENxN71B35ptm","spotify:track:0b7p3kryLGENxN71B35ptm","https://api.spotify.com/v1/tracks/0b7p3kryLGENxN71B35ptm","https://api.spotify.com/v1/audio-analysis/0b7p3kryLGENxN71B35ptm",530532,4
+0.276,0.113,3,-20.611,1,0.0346,0.96,0.95,0.0931,0.211,132.911,"audio_features","0n28PXtudWAJzjDqNczdS6","spotify:track:0n28PXtudWAJzjDqNczdS6","https://api.spotify.com/v1/tracks/0n28PXtudWAJzjDqNczdS6","https://api.spotify.com/v1/audio-analysis/0n28PXtudWAJzjDqNczdS6",192000,3
+0.688,0.646,9,-11.76,0,0.0539,0.0495,0.398,0.0834,0.961,103.86,"audio_features","6FNdzxV9g4NaINrejBTPUi","spotify:track:6FNdzxV9g4NaINrejBTPUi","https://api.spotify.com/v1/tracks/6FNdzxV9g4NaINrejBTPUi","https://api.spotify.com/v1/audio-analysis/6FNdzxV9g4NaINrejBTPUi",167973,4
+0.569,0.621,10,-9.879,1,0.0546,0.772,0.000878,0.105,0.634,149.03,"audio_features","16uFiFTRR1KSJ6JyeXesBI","spotify:track:16uFiFTRR1KSJ6JyeXesBI","https://api.spotify.com/v1/tracks/16uFiFTRR1KSJ6JyeXesBI","https://api.spotify.com/v1/audio-analysis/16uFiFTRR1KSJ6JyeXesBI",191373,4
+0.363,0.0438,6,-26.46,0,0.0526,0.995,0.904,0.103,0.0469,70.071,"audio_features","4hVgzGnQ6TtV3vqPgb4LhY","spotify:track:4hVgzGnQ6TtV3vqPgb4LhY","https://api.spotify.com/v1/tracks/4hVgzGnQ6TtV3vqPgb4LhY","https://api.spotify.com/v1/audio-analysis/4hVgzGnQ6TtV3vqPgb4LhY",120493,3
+0.157,0.0553,9,-23.391,1,0.0381,0.984,0.8,0.107,0.0421,83.299,"audio_features","1KeJxSvW6pLU1ieRfQOMca","spotify:track:1KeJxSvW6pLU1ieRfQOMca","https://api.spotify.com/v1/tracks/1KeJxSvW6pLU1ieRfQOMca","https://api.spotify.com/v1/audio-analysis/1KeJxSvW6pLU1ieRfQOMca",136960,4
+0.572,0.529,7,-11.24,1,0.0346,0.752,0.902,0.132,0.488,130.149,"audio_features","7IeKiZrctiSoHC336rUmkI","spotify:track:7IeKiZrctiSoHC336rUmkI","https://api.spotify.com/v1/tracks/7IeKiZrctiSoHC336rUmkI","https://api.spotify.com/v1/audio-analysis/7IeKiZrctiSoHC336rUmkI",143241,3
+0.391,0.808,8,-6.209,0,0.0892,0.0759,0,0.149,0.737,100.304,"audio_features","7BHPGtpuuWWsvE7cCaMuEU","spotify:track:7BHPGtpuuWWsvE7cCaMuEU","https://api.spotify.com/v1/tracks/7BHPGtpuuWWsvE7cCaMuEU","https://api.spotify.com/v1/audio-analysis/7BHPGtpuuWWsvE7cCaMuEU",203507,4
+0.629,0.422,10,-8.542,0,0.0411,0.705,0,0.124,0.325,129.456,"audio_features","6ZygaqgtPkiahkiYJhYWhn","spotify:track:6ZygaqgtPkiahkiYJhYWhn","https://api.spotify.com/v1/tracks/6ZygaqgtPkiahkiYJhYWhn","https://api.spotify.com/v1/audio-analysis/6ZygaqgtPkiahkiYJhYWhn",99227,4
+0.41,0.803,7,-5.363,1,0.0623,0.239,0,0.103,0.814,153.315,"audio_features","5xoUgPXbMNUmoHU0Enwtwq","spotify:track:5xoUgPXbMNUmoHU0Enwtwq","https://api.spotify.com/v1/tracks/5xoUgPXbMNUmoHU0Enwtwq","https://api.spotify.com/v1/audio-analysis/5xoUgPXbMNUmoHU0Enwtwq",169307,4
+0.805,0.757,8,-7.46,1,0.0355,0.279,0.000839,0.101,0.973,102.14,"audio_features","2q9udNV9NK0BL3q9p6TLxf","spotify:track:2q9udNV9NK0BL3q9p6TLxf","https://api.spotify.com/v1/tracks/2q9udNV9NK0BL3q9p6TLxf","https://api.spotify.com/v1/audio-analysis/2q9udNV9NK0BL3q9p6TLxf",271031,4
+0.585,0.52,5,-6.136,0,0.0712,0.124,7.01e-05,0.131,0.129,159.801,"audio_features","0e7ipj03S05BNilyu5bRzt","spotify:track:0e7ipj03S05BNilyu5bRzt","https://api.spotify.com/v1/tracks/0e7ipj03S05BNilyu5bRzt","https://api.spotify.com/v1/audio-analysis/0e7ipj03S05BNilyu5bRzt",218147,4
+0.566,0.755,11,-5.526,1,0.0368,0.0338,0,0.315,0.445,101.006,"audio_features","4Sfa7hdVkqlM8UW5LsSY3F","spotify:track:4Sfa7hdVkqlM8UW5LsSY3F","https://api.spotify.com/v1/tracks/4Sfa7hdVkqlM8UW5LsSY3F","https://api.spotify.com/v1/audio-analysis/4Sfa7hdVkqlM8UW5LsSY3F",264493,4
+0.871,0.481,7,-9.068,1,0.0383,0.52,5.54e-05,0.0809,0.664,103.063,"audio_features","2LsbizbOeNa4x6qsi2jAMb","spotify:track:2LsbizbOeNa4x6qsi2jAMb","https://api.spotify.com/v1/tracks/2LsbizbOeNa4x6qsi2jAMb","https://api.spotify.com/v1/audio-analysis/2LsbizbOeNa4x6qsi2jAMb",261200,4
+0.698,0.867,2,-7.587,0,0.0508,0.0836,0.019,0.358,0.852,90.458,"audio_features","0BiS57M0yGU3DzDGmhLT1a","spotify:track:0BiS57M0yGU3DzDGmhLT1a","https://api.spotify.com/v1/tracks/0BiS57M0yGU3DzDGmhLT1a","https://api.spotify.com/v1/audio-analysis/0BiS57M0yGU3DzDGmhLT1a",291586,3
+0.652,0.31,2,-13.865,0,0.0324,0.526,0.686,0.115,0.294,131.973,"audio_features","0L2Q17joitlk1BxqKbbUyM","spotify:track:0L2Q17joitlk1BxqKbbUyM","https://api.spotify.com/v1/tracks/0L2Q17joitlk1BxqKbbUyM","https://api.spotify.com/v1/audio-analysis/0L2Q17joitlk1BxqKbbUyM",283107,4
+0.634,0.352,9,-12.631,1,0.0314,0.691,0.139,0.112,0.193,57.487,"audio_features","23dzk1h4DSdnwCzbsoLshb","spotify:track:23dzk1h4DSdnwCzbsoLshb","https://api.spotify.com/v1/tracks/23dzk1h4DSdnwCzbsoLshb","https://api.spotify.com/v1/audio-analysis/23dzk1h4DSdnwCzbsoLshb",247381,4
+0.566,0.669,9,-10.081,1,0.0694,0.7,0.0654,0.588,0.92,149.702,"audio_features","0eTHlx53lUn95HVsJtR6Qx","spotify:track:0eTHlx53lUn95HVsJtR6Qx","https://api.spotify.com/v1/tracks/0eTHlx53lUn95HVsJtR6Qx","https://api.spotify.com/v1/audio-analysis/0eTHlx53lUn95HVsJtR6Qx",239107,4
+0.631,0.755,5,-7.65,0,0.0573,0.518,0.000864,0.0629,0.763,95.364,"audio_features","4CwpuCZcK6Vym6BZd8Pgfe","spotify:track:4CwpuCZcK6Vym6BZd8Pgfe","https://api.spotify.com/v1/tracks/4CwpuCZcK6Vym6BZd8Pgfe","https://api.spotify.com/v1/audio-analysis/4CwpuCZcK6Vym6BZd8Pgfe",187267,4
+0.579,0.713,2,-10.006,0,0.0354,0.366,0.472,0.189,0.943,180.031,"audio_features","6hUjJVFCWO2vJphmXKF7aE","spotify:track:6hUjJVFCWO2vJphmXKF7aE","https://api.spotify.com/v1/tracks/6hUjJVFCWO2vJphmXKF7aE","https://api.spotify.com/v1/audio-analysis/6hUjJVFCWO2vJphmXKF7aE",169187,4
+0.182,0.0651,10,-16.341,1,0.0462,0.942,0.886,0.111,0.038,60.812,"audio_features","0b7p3kryLGENxN71B35ptm","spotify:track:0b7p3kryLGENxN71B35ptm","https://api.spotify.com/v1/tracks/0b7p3kryLGENxN71B35ptm","https://api.spotify.com/v1/audio-analysis/0b7p3kryLGENxN71B35ptm",530532,4
+0.276,0.113,3,-20.611,1,0.0346,0.96,0.95,0.0931,0.211,132.911,"audio_features","0n28PXtudWAJzjDqNczdS6","spotify:track:0n28PXtudWAJzjDqNczdS6","https://api.spotify.com/v1/tracks/0n28PXtudWAJzjDqNczdS6","https://api.spotify.com/v1/audio-analysis/0n28PXtudWAJzjDqNczdS6",192000,3
+0.688,0.646,9,-11.76,0,0.0539,0.0495,0.398,0.0834,0.961,103.86,"audio_features","6FNdzxV9g4NaINrejBTPUi","spotify:track:6FNdzxV9g4NaINrejBTPUi","https://api.spotify.com/v1/tracks/6FNdzxV9g4NaINrejBTPUi","https://api.spotify.com/v1/audio-analysis/6FNdzxV9g4NaINrejBTPUi",167973,4
+0.569,0.621,10,-9.879,1,0.0546,0.772,0.000878,0.105,0.634,149.03,"audio_features","16uFiFTRR1KSJ6JyeXesBI","spotify:track:16uFiFTRR1KSJ6JyeXesBI","https://api.spotify.com/v1/tracks/16uFiFTRR1KSJ6JyeXesBI","https://api.spotify.com/v1/audio-analysis/16uFiFTRR1KSJ6JyeXesBI",191373,4
+0.363,0.0438,6,-26.46,0,0.0526,0.995,0.904,0.103,0.0469,70.071,"audio_features","4hVgzGnQ6TtV3vqPgb4LhY","spotify:track:4hVgzGnQ6TtV3vqPgb4LhY","https://api.spotify.com/v1/tracks/4hVgzGnQ6TtV3vqPgb4LhY","https://api.spotify.com/v1/audio-analysis/4hVgzGnQ6TtV3vqPgb4LhY",120493,3
+0.157,0.0553,9,-23.391,1,0.0381,0.984,0.8,0.107,0.0421,83.299,"audio_features","1KeJxSvW6pLU1ieRfQOMca","spotify:track:1KeJxSvW6pLU1ieRfQOMca","https://api.spotify.com/v1/tracks/1KeJxSvW6pLU1ieRfQOMca","https://api.spotify.com/v1/audio-analysis/1KeJxSvW6pLU1ieRfQOMca",136960,4
+0.572,0.529,7,-11.24,1,0.0346,0.752,0.902,0.132,0.488,130.149,"audio_features","7IeKiZrctiSoHC336rUmkI","spotify:track:7IeKiZrctiSoHC336rUmkI","https://api.spotify.com/v1/tracks/7IeKiZrctiSoHC336rUmkI","https://api.spotify.com/v1/audio-analysis/7IeKiZrctiSoHC336rUmkI",143241,3
+0.391,0.808,8,-6.209,0,0.0892,0.0759,0,0.149,0.737,100.304,"audio_features","7BHPGtpuuWWsvE7cCaMuEU","spotify:track:7BHPGtpuuWWsvE7cCaMuEU","https://api.spotify.com/v1/tracks/7BHPGtpuuWWsvE7cCaMuEU","https://api.spotify.com/v1/audio-analysis/7BHPGtpuuWWsvE7cCaMuEU",203507,4
+0.629,0.422,10,-8.542,0,0.0411,0.705,0,0.124,0.325,129.456,"audio_features","6ZygaqgtPkiahkiYJhYWhn","spotify:track:6ZygaqgtPkiahkiYJhYWhn","https://api.spotify.com/v1/tracks/6ZygaqgtPkiahkiYJhYWhn","https://api.spotify.com/v1/audio-analysis/6ZygaqgtPkiahkiYJhYWhn",99227,4
+0.41,0.803,7,-5.363,1,0.0623,0.239,0,0.103,0.814,153.315,"audio_features","5xoUgPXbMNUmoHU0Enwtwq","spotify:track:5xoUgPXbMNUmoHU0Enwtwq","https://api.spotify.com/v1/tracks/5xoUgPXbMNUmoHU0Enwtwq","https://api.spotify.com/v1/audio-analysis/5xoUgPXbMNUmoHU0Enwtwq",169307,4
+0.805,0.757,8,-7.46,1,0.0355,0.279,0.000839,0.101,0.973,102.14,"audio_features","2q9udNV9NK0BL3q9p6TLxf","spotify:track:2q9udNV9NK0BL3q9p6TLxf","https://api.spotify.com/v1/tracks/2q9udNV9NK0BL3q9p6TLxf","https://api.spotify.com/v1/audio-analysis/2q9udNV9NK0BL3q9p6TLxf",271031,4
+0.585,0.52,5,-6.136,0,0.0712,0.124,7.01e-05,0.131,0.129,159.801,"audio_features","0e7ipj03S05BNilyu5bRzt","spotify:track:0e7ipj03S05BNilyu5bRzt","https://api.spotify.com/v1/tracks/0e7ipj03S05BNilyu5bRzt","https://api.spotify.com/v1/audio-analysis/0e7ipj03S05BNilyu5bRzt",218147,4
+0.566,0.755,11,-5.526,1,0.0368,0.0338,0,0.315,0.445,101.006,"audio_features","4Sfa7hdVkqlM8UW5LsSY3F","spotify:track:4Sfa7hdVkqlM8UW5LsSY3F","https://api.spotify.com/v1/tracks/4Sfa7hdVkqlM8UW5LsSY3F","https://api.spotify.com/v1/audio-analysis/4Sfa7hdVkqlM8UW5LsSY3F",264493,4
+0.871,0.481,7,-9.068,1,0.0383,0.52,5.54e-05,0.0809,0.664,103.063,"audio_features","2LsbizbOeNa4x6qsi2jAMb","spotify:track:2LsbizbOeNa4x6qsi2jAMb","https://api.spotify.com/v1/tracks/2LsbizbOeNa4x6qsi2jAMb","https://api.spotify.com/v1/audio-analysis/2LsbizbOeNa4x6qsi2jAMb",261200,4
+0.698,0.867,2,-7.587,0,0.0508,0.0836,0.019,0.358,0.852,90.458,"audio_features","0BiS57M0yGU3DzDGmhLT1a","spotify:track:0BiS57M0yGU3DzDGmhLT1a","https://api.spotify.com/v1/tracks/0BiS57M0yGU3DzDGmhLT1a","https://api.spotify.com/v1/audio-analysis/0BiS57M0yGU3DzDGmhLT1a",291586,3
+0.652,0.31,2,-13.865,0,0.0324,0.526,0.686,0.115,0.294,131.973,"audio_features","0L2Q17joitlk1BxqKbbUyM","spotify:track:0L2Q17joitlk1BxqKbbUyM","https://api.spotify.com/v1/tracks/0L2Q17joitlk1BxqKbbUyM","https://api.spotify.com/v1/audio-analysis/0L2Q17joitlk1BxqKbbUyM",283107,4
+0.634,0.352,9,-12.631,1,0.0314,0.691,0.139,0.112,0.193,57.487,"audio_features","23dzk1h4DSdnwCzbsoLshb","spotify:track:23dzk1h4DSdnwCzbsoLshb","https://api.spotify.com/v1/tracks/23dzk1h4DSdnwCzbsoLshb","https://api.spotify.com/v1/audio-analysis/23dzk1h4DSdnwCzbsoLshb",247381,4
+0.566,0.669,9,-10.081,1,0.0694,0.7,0.0654,0.588,0.92,149.702,"audio_features","0eTHlx53lUn95HVsJtR6Qx","spotify:track:0eTHlx53lUn95HVsJtR6Qx","https://api.spotify.com/v1/tracks/0eTHlx53lUn95HVsJtR6Qx","https://api.spotify.com/v1/audio-analysis/0eTHlx53lUn95HVsJtR6Qx",239107,4
+0.631,0.755,5,-7.65,0,0.0573,0.518,0.000864,0.0629,0.763,95.364,"audio_features","4CwpuCZcK6Vym6BZd8Pgfe","spotify:track:4CwpuCZcK6Vym6BZd8Pgfe","https://api.spotify.com/v1/tracks/4CwpuCZcK6Vym6BZd8Pgfe","https://api.spotify.com/v1/audio-analysis/4CwpuCZcK6Vym6BZd8Pgfe",187267,4
+0.579,0.713,2,-10.006,0,0.0354,0.366,0.472,0.189,0.943,180.031,"audio_features","6hUjJVFCWO2vJphmXKF7aE","spotify:track:6hUjJVFCWO2vJphmXKF7aE","https://api.spotify.com/v1/tracks/6hUjJVFCWO2vJphmXKF7aE","https://api.spotify.com/v1/audio-analysis/6hUjJVFCWO2vJphmXKF7aE",169187,4
