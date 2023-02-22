@@ -17,13 +17,18 @@ You have two options for completing this lab.
 
 **Option 1**: **Classify by users**. Build models that predict whether a given song will be in your collection vs. a partner in class. This requires that you were already a Spotify user so you have enough data to work with. You will download your data from the Spotify API and then exchange with another member of class.
 
-**Option 2**: **Classify by genres**. Build models that predict which genre a song belongs to. This will use a pre-existing Spotify dataset available from Kaggle.com (<https://www.kaggle.com/datasets/mrmorj/dataset-of-songs-in-spotify>)
 
 ```{r}
+
 library(spotifyr) #API interaction
 library(tidyverse)
 library(tidymodels)
 library(caret)
+library(kknn)
+library(baguette)
+library(ranger)
+library(kableExtra)
+
 ```
 
 Client ID and Client Secret are required to create and access token that is required to interact with the API. You can set them as system values so we don't have to do provide them each time.
@@ -47,118 +52,150 @@ access_token \<- get_spotify_access_token() #takes ID and SECRET, sends to Spoti
 >
 > *This can be resolved by editing the callback settings on your app. Go to your app and click "Edit Settings". Under redirect URLs paste this: <http://localhost:1410/> and click save at the bottom.*
 
-**Option 1: Data Preparation**
+# **Option 1: Data Preparation**
 
 You can use get_my_saved_tracks() to request all your liked tracks. It would be good if you had at least 150-200 liked tracks so the model has enough data to work with. If you don't have enough liked tracks, you can instead use get_my_recently_played(), and in that case grab at least 500 recently played tracks if you can.
 
 The Spotify API returns a data frame of tracks and associated attributes. However, it will only return up to 50 (or 20) tracks at a time, so you will have to make multiple requests. Use a function to combine all your requests in one call.
 
+Create a function that gives me the 200 songs
 ```{r}
 
-# Create the function
-get_javier_tracks <- function(number) {
- total_tracks <- data.frame()
-  x <- number/20
+get_my_loved_songs <- function(n) {
+  df <- data.frame()
+  x <- n/50
+  offset <- 0
   
   for (i in 1:x) {
-    new_tracks <- get_my_saved_tracks()
-    total_tracks <- rbind(total_tracks,new_tracks)
+    new_tracks <- get_my_saved_tracks(limit=50, 
+                                      offset = offset,
+                                      include_meta_info = FALSE)
+    df <- rbind(df,new_tracks)
+    offset <- offset + 51
+    }
+  return(df)
   }
-  return(total_tracks)
+
+javier_tracks <- get_my_loved_songs(200)
+
+```
+
+Create a function that prints out the features of all the songs
+```{r}
+
+extract_features <- function(track_id) {
+  df <- data.frame()
+  id_num <- 0
+  x <- length(track_id)/100
+  for (i in 1:x) {
+    new_tracks_features <- get_track_audio_features(track_id[(id_num+1):(id_num+100)])
+    df <- rbind(df, as.data.frame(new_tracks_features))
+    id_num <- id_num + 100
+    }
+  return(df)
 }
 
+track_features <- extract_features(javier_tracks$track.id)
+
 ```
 
+Edit and clean my data frame
 ```{r}
-# Asking R for a data frame that contains 100 songs that I have liked. The #100 its because its the maximum length of the ids vector for generating the predictors with get_track_audio_features()
-total_tracks <- get_javier_tracks(100)
+
+tracks_df_javier <- track_features |> 
+  add_column(javier_tracks$track.name) |> 
+  select(-c(track_href, type, uri, analysis_url, id)) |> 
+  mutate(user = "javier") |> 
+  rename(name = "javier_tracks$track.name") |> 
+  relocate(c(name, user))
 
 ```
 
-Once you have your tracks, familiarize yourself with this initial dataframe. You'll need to request some additional information for the analysis. If you give the API a list of track IDs using get_track_audio_features(), it will return an audio features data frame of all the tracks and some attributes of them.
-
+Write my data frame for export
 ```{r}
-# Generating the a new data frame with more information about each song.
-tracks_javier <- get_track_audio_features(total_tracks$track.id)
+write_csv(tracks_df_javier, here::here("tracks_df_javier.csv"))
 
 ```
 
-These track audio features are the predictors we are interested in, but this data frame doesn't have the actual names of the tracks. Append the 'track.name' column from your favorite tracks database.
-
-```{r}
-#Joining the track.name column to the data frame that has the predictors
-tot_tracks_javier <- tracks_javier |> 
-  add_column(total_tracks$track.name) |> 
-  rename(name = "total_tracks$track.name") |> 
-  relocate(name, .before = danceability) |> 
-  select(- c(id, analysis_url, track_href, uri, type))
-```
-
-```{r}
-#Check that my new data set has all the predictors as numeric so we can proceed to the model.
-skimr::skim(tracks_javier)
-
-```
-
-Find a class mate whose data you would like to use. Add your partner's data to your dataset. Create a new column that will contain the outcome variable that you will try to predict. This variable should contain two values that represent if the track came from your data set or your partner's.
-
-```{r}
-#Export your data frame
-write.csv(tracks_javier, here::here("javier_songs.csv"), row.names=FALSE)
-
-```
-
-**Option 2: Data preparation**
-
-Download the Spotify dataset from <https://www.kaggle.com/datasets/mrmorj/dataset-of-songs-in-spotify> Inspect the data. Choose two genres you'd like to use for the classification task. Filter down the data to include only the tracks of that genre. ##Data Exploration (both options) Let's take a look at your data. Do some exploratory summary stats and visualization. For example: What are the most danceable tracks in your dataset? What are some differences in the data between users (Option 1) or genres (Option 2)?
-
-### **Modeling**
-
-Create two models, a k-nearest neighbor model and a decision tree model that predict whether a track belongs to:
-
-1.  you or your partner's collection
-2.  genre 1 or genre 2
-
-Then validate and compare the performance of the two models you have created. INCOMPLETE
+# **Modeling**
 
 # Create four final candidate models: 
-## 1. KNN Model
+
+1. KNN Model neighbor model
+2. Decision tree model
+3. Bagged Tree
+4. Random Forest
+
+Go through the modeling process for each model:
+
+**Preprocessing:** You can use the same recipe for all the models you create. 
+**Resampling:** Make sure to use appropriate resampling to select the best version created by each algorithm. Tuning. Find the best values for each hyperparameter (within a reasonable range). Compare the performance of the four final models you have created.
+
+Use appropriate performance evaluation metric(s) for this classification task. A table would be a good way to display your comparison. Use at least one visualization illustrating your model results.
+
+
+Merging the both data sets
+```{r}
+
+tracks_df_pol <- read_csv("tracks_df_pol.csv") |> 
+  select(-c(id))
+
+full_df <- rbind(tracks_df_javier,tracks_df_pol) |> 
+  select(-c(name))
+
+full_df$user <- as.factor(full_df$user)
+
+```
+
+
+```{r}
+
+general_comparison <- full_df |> 
+  group_by(user) |> 
+  summarise(dance = round(mean(danceability),2),
+            energy = round(mean(energy),2),
+            loudness = round(mean(loudness),2),
+            speechiness = round(mean(speechiness),2),
+            acousticness = round(mean(acousticness),2),
+            instrumentalness = round(mean(instrumentalness),2),
+            liveness = round(mean(liveness),2),
+            tempo = round(mean(tempo),2)) 
+
+```
+
 
 ```{r}
 set.seed(123)
 #initial split of data, default 75/25
 
-javier_split <- initial_split(tracks_javier, prop = .75)
-javier_tracks_train <- training(javier_split)
-javier_tracks_test <- testing(javier_split)
+full_split <- initial_split(full_df, prop = .75)
+full_train <- training(full_split)
+full_test <- testing(full_split)
 
 ```
 
 We need to create a recipe and do the pre-processing by converting dummy coding the nominal variables and normalizing the numeric variables.
-
 ```{r recipe}
 #pre-processing
-javier_recipe <- recipe(time_signature ~ . ,
-                        data = javier_tracks_train) |> 
-  prep() 
+recipe <- recipe(user ~ . ,
+                 data = full_df) |> 
+  prep()
 
-#bake 
-baked_jav_train <- bake(javier_recipe, javier_tracks_train)
+#bake with the train data
+baked_train <- bake(recipe, full_train)
+
+#bake with the test data
+baked_test <- bake(recipe, full_test)
+
 ```
 
-Now the recipe is ready to be applied to the test data.
-
-```{r bake_test}
-baked_jav_test <- bake(javier_recipe, javier_tracks_test)
-```
-
+## 1. KNN Model
 ##Specify the k-nearest neighbor model
 
 ```{r knn_spec}
-
 knn_spec <- nearest_neighbor() |> #select the type of model
   set_engine("kknn") |> 
-  set_mode("regression")
+  set_mode("classification")
 
 ```
 
@@ -166,54 +203,53 @@ Fit the new KNN specification to the training data.
 
 ```{r}
 knn_fit <- knn_spec %>% 
-  fit(time_signature ~. , data = javier_tracks_train)
+  fit(user ~. , data = full_train)
 ```
 
+
+Now create the 5 folds we want to divide the data frame on
 ```{r cv}
 set.seed(123)
 
-# 5-fold CV on the training data set
-cv_folds <- vfold_cv(javier_tracks_train, v = 5)
+# 10-fold CV on the training data set
+cv_folds <- vfold_cv(full_df, v = 10)
 
 ```
 
 ![](images/k-fold.png){width="80%"}
 
 We now have a recipe for processing the data, a model specification, and CV splits for the training data.
-
 Let's put it all together in a workflow.
-
 ```{r}
 knn_workflow <- workflow() |> 
   add_model(knn_spec) |> 
-  add_recipe(javier_recipe)
+  add_recipe(recipe)
 ```
 
 Now fit the resamples.
 
 ```{r}
-knn_javier_resample <- knn_workflow |> 
+set.seed(123)
+
+knn_resample <- knn_workflow |> 
   fit_resamples(resamples = cv_folds,
                 control = control_resamples(save_pred = TRUE))
 ```
 
 # Check the performance
 ```{r}
-collect_metrics(knn_javier_resample)
+collect_metrics(knn_resample)
 ```
 
-INCOMPLETE -> FILL YOUR INSIGHTS WITH THE METRICS RESULTS....
+
+#KNN with Tunning
 
 Now lets analyse what the tune() parameter does to the final metrics.
-
 ```{r spec_with_tuning}
 # Define our KNN model with tuning
 knn_spec_tune <- nearest_neighbor(neighbors = tune()) |> 
-  set_mode("regression") |>  
+  set_mode("classification") |>  
   set_engine("kknn")
-
-# Check the model
-knn_spec_tune
 
 ```
 
@@ -221,114 +257,355 @@ knn_spec_tune
 # Define a new workflow
 wf_knn_tune <- workflow() |> 
   add_model(knn_spec_tune) |> 
-  add_recipe(javier_recipe)
+  add_recipe(recipe)
     
 # Fit the workflow on our predefined folds and hyperparameters
 fit_knn_cv <- wf_knn_tune |> 
-  tune_grid(cv_folds, grid = data.frame(neighbors = c(1,5,seq(10,100,10))))
+  tune_grid(
+    cv_folds, 
+    grid = data.frame(neighbors = c(1, 5, 10, seq(20,100,10)))
+  )
     
 # Check the performance with collect_metrics()
 fit_knn_cv %>% collect_metrics()
 
 ```
 
-INCOMPLETE -> FILL YOUR INSIGHTS WITH THE METRICS RESULTS, AND COMPARE THEM WITH THE TUNE() FUNCTION
 
 Create the final workflow and final fit within the knn_cv process
 The finalize_workflow() function wants (1) your initial workflow and (2) your best model.
 ```{r}
-
 # The final workflow for our KNN model
-final_wf <- knn_workflow |> 
-  finalize_workflow(select_best(fit_knn_cv)) 
+final_wf <- wf_knn_tune |> 
+  finalize_workflow(select_best(fit_knn_cv, metric = "accuracy")) 
 
-# Check out the final workflow object
-final_wf
-
-```
-
-```{r}
 # Fitting our final workflow
-final_fit <- final_wf |> 
-  fit(data = churn_train)
-# Examine the final workflow
-final_fit
+final_fit = final_wf %>% fit(data = full_train)
 ```
 
-And finally, we can predict onto the testing data set.
+
 ```{r}
-churn_pred <- final_fit |> 
-  predict(new_data = churn_test)
+# Write over 'final_fit' with this last_fit() approach
+final_knn_fit <- final_fit %>% last_fit(full_split)
 
-churn_pred %>% head()
+# Collect metrics on the test data for the final comparison
+knn_metrics <- 
+  final_knn_fit %>% 
+  collect_metrics(summarise = TRUE) %>%
+  mutate(model = "KNN")
+
 ```
-INCOMPLETE -> FILL YOUR INSIGHTS WITH THE METRICS RESULTS, AND COMPARE THEM WITH THE TUNE() FUNCTION AND THE CV
-
 
 ## 2.Decision Tree
 
+Model Specs
 ```{r}
+# Create model specification 
+tree_spec <- decision_tree(
+  cost_complexity = tune(), 
+  tree_depth = tune(), 
+  min_n = tune()) |> 
+  set_engine("rpart") |> 
+  set_mode("classification")
+```
 
-javier_dt1 <- rpart(
-  formula = time_signature ~ .,
-  data = javier_tracks_train,
-  method = "class")
+Model Grid
+```{r}
+#Create a grid to be filled
+tree_grid <- grid_regular(cost_complexity(), 
+                          tree_depth(), 
+                          min_n(), 
+                          levels = 5)
+```
+
+Model Work Flow
+```{r}
+# create the workflow for this decision tree
+wf_tree <- workflow() |> 
+  add_recipe(recipe) |> 
+  add_model(tree_spec)
 
 ```
 
-We can Visualize this Decision Tree with the rpart.plot() function
-```{r}
-library(rpart.plot)
-rpart.plot(javier_dt1)
-```
 
 ```{r}
-javier_dt2 <- rpart(
-    formula = time_signature ~ .,
-    data    = javier_tracks_train,
-    method  = "class", 
-    control = list(cp = 0, xval = 10)
+#set up k-fold CV. This can be used for all the algorithms
+set.seed(123)
+
+songs_cv = full_train |> 
+  vfold_cv(v = 5)
+
+```
+
+
+```{r}
+doParallel::registerDoParallel() # Run build trees in parallel
+
+tree_rs <- tune_grid(
+  tree_spec, # model specification
+  user ~ .,  # features to use
+  resamples = songs_cv, 
+  grid = tree_grid, # Select which grid will be used
+  metrics = metric_set(accuracy)  # which combination is the best 
 )
 
-plotcp(javier_dt2)
-
 ```
 
+Use autoplot() to examine how different parameter configurations relate to accuracy 
+```{r, fig.align='center', out.width="60%"}
+autoplot(tree_rs) + theme_light()
+```
 
+Select the best hyperparrameters:
 ```{r}
-# caret cross validation results
-javier_dt3 <- train(time_signature ~ .,
-  data = javier_tracks_train,
-  method = "rpart",
-  trControl = trainControl(method = "cv", number = 10),
-  tuneLength = 20)
+# is you want to actually see the best values for accuracy
+show_best(tree_rs) 
+# model has to actually use one
+select_best(tree_rs) # gives us the best hyper-parameters to use for our model
+```
 
-ggplot(javier_dt3)
+We can finalize the model specification where we have replaced the tune functions with optimized values.
+```{r final_tree_spec}
+final_tree <- finalize_model(tree_spec, 
+                             select_best(tree_rs))
+```
+
+
+Lets do a last_fit
+```{r final_tree_fit}
+final_tree_fit <- last_fit(final_tree, # give final specification
+                           user ~ ., # give final model call
+                           full_split # give genre split data because this is doing the training and prediction same time
+)
+
+
+# Collect metrics on the test data for the final comparison
+tree_metrics <- 
+  final_tree_fit %>% 
+  collect_metrics(summarise = TRUE) %>%
+  mutate(model = "Decision Tree")
 
 ```
 
-Understand how the features affect our final column
-```{r}
-vip(javier_dt3, num_features = 10, bar = FALSE)
-
-```
 
 # Bagged Tree
 
 3. bagged tree - bag_tree() - Use the "times =" argument when setting the engine during model specification to specify the number of trees. The rule of thumb is that 50-500 trees is usually sufficient. The bottom of that range should be sufficient here.
 
+Create the model´s specs
+```{r}
+# Create model specification 
+
+bagging_spec <- bag_tree(
+  cost_complexity = tune(), 
+  tree_depth = tune(), 
+  min_n = tune(),
+  mode = "classification", 
+) |> set_engine("rpart", times = 50) # Number of Trees (Bootrap Resamples). They should be between 50-500
+
+```
+
+Create the grid for the model
+```{r}
+bagging_grid <- grid_regular(cost_complexity(), 
+                              tree_depth(), 
+                              min_n(), 
+                              levels = 5) # how many levels will the tune try
+```
+
+Create the Bagging work flow
+```{r}
+# Create the workflow 
+bagging_wf <- workflow() |> 
+  add_recipe(recipe) |> 
+  add_model(bagging_spec)
+
+```
 
 
+```{r}
+# determine best combination of tuned hyperparamters
+doParallel::registerDoParallel() #build trees in parallel
+
+bag_tree_rs <- tune_grid(
+  bagging_spec, # model specification
+  user ~ .,  # features to use
+  resamples = songs_cv, # put the resamples that we created above
+  grid = bagging_grid, # which grid
+  metrics = metric_set(accuracy)  # which combination is the best
+)
+```
+
+
+```{r}
+# Use autoplot() to examine how different parameter configurations relate to accuracy
+autoplot(bag_tree_rs) + theme_light()
+
+# select the best combination of hyperparameters
+# if you want to actually see the best values for accuracy
+show_best(bag_tree_rs)
+
+# model has to actually use one
+select_best(bag_tree_rs) # gives us the best hyperparamters to use for our model
+
+
+# finalize our model with the best hyperparamters
+final_bagged_tree <- finalize_model(bagging_spec,
+                             select_best(bag_tree_rs))
+```
+
+
+```{r}
+# fit model to testing data and view predictions:
+final_bagged_fit <- last_fit(final_bagged_tree, # give final specification
+                           user ~ ., # give final model call
+                           full_split # give genre split data because this is doing the training and prediction same time
+                           )
+
+
+# Collect metrics on the test data for the final comparison
+bagged_metrics <-
+  final_bagged_fit %>%
+  collect_metrics(summarise = TRUE) %>%
+  mutate(model = "Bagging")
+
+```
 
 
 # Random Forest
 
-4. random forest - rand_forest() - m_try() is the new hyperparameter of interest for this type of model. Make sure to include it in your tuning process
+4. Random Forest - rand_forest() - m_try() is the new hyperparameter of interest for this type of model. Make sure to include it in your tuning process
+
+Create the Random Forest Spec
+```{r}
+# create model specification
+forest_spec <- rand_forest(
+  trees = 1000, 
+  min_n = tune(),
+  mtry = tune(),
+  mode = "classification",
+  engine = "ranger" # this is the default engine so I went with this
+) # not sure the difference between putting mode and engine within this function or using set_mode() and set_engine()
+
+```
+
+
+```{r}
+# Bundle model spec with recipe into workflow
+wf_forest <- workflow() |> 
+  add_recipe(recipe = recipe) |> 
+  add_model(forest_spec)
+
+```
+
+
+```{r}
+# use 10 fold cross validation to tune hyperparamters 
+set.seed(123)
+random_folds <- vfold_cv(full_train) 
+
+```
+
+
+```{r}
+# run this in parallel so that is goes faster: 
+set.seed(123)
+doParallel::registerDoParallel()
+
+# create tuning grid
+random_grid <- grid_regular(min_n(), mtry(range = c(1,5)))
+```
+
+
+```{r}
+# tune the hyperparameters with the above created grid
+forest_resample <- tune_grid(
+  wf_forest,
+  resamples = random_folds,
+  grid = random_grid)
+```
+
+
+```{r}
+# visualize results of hyperparameter tuning: 
+autoplot(forest_resample) + theme_light()
+
+# select best hyperparameters
+show_best(forest_resample)
+
+select_best(forest_resample) 
+
+```
+
+
+```{r}
+# Finalize the model
+final_forest <- finalize_model(forest_spec, 
+                             select_best(forest_resample))
+
+
+# fit the model to the testing data!
+final_forest_fit <- last_fit(final_forest, # give final specification
+                           user ~ ., # give final model call
+                           full_split # give genre split data because this is doing the training and prediction same time
+                           )
+```
+
+
+```{r}
+# Collect metrics on the test data for the final comparison
+forest_metrics <- 
+  final_forest_fit %>% 
+  collect_metrics(summarise = TRUE) %>%
+  mutate(model = "Forest")
+
+```
+
+Final Table Results
+
+```{r}
+final_results <- bind_rows(knn_metrics, tree_metrics, bagged_metrics, forest_metrics) #add bagged_metrics,
+
+```
+
+
+```{r}
+final_table <- final_results |> 
+  select(model, .metric, .estimate) |> 
+  pivot_wider(names_from = .metric, values_from = .estimate) |> 
+  arrange(accuracy) |> 
+  mutate(model = fct_reorder(model, accuracy))
+
+```
+
+Create the final Table
+```{r}
+kable(final_table,
+      padding = 1,
+      digits = round(3),
+      align = "c",
+      format = "pipe",
+      caption = "Model Comparision Summary")
+```
+
+
+Create the final graph comparision
+```{r}
+final_table %>% 
+  ggplot(aes(x = model, y = accuracy, fill= model)) +
+  geom_col() +
+  labs(title = "Final Model Graph Comparison",
+       x = "Type of Model",
+       y = "Model´s Accuracy") +
+  geom_text(
+    size = 5,
+    aes(label = round(accuracy, 3), y = accuracy + 0.05),
+    vjust = 1, 
+    color = "gray30")
+
+```
 
 
 
 
-Go through the modeling process for each model:
 
-Preprocessing. You can use the same recipe for all the models you create. Resampling. Make sure to use appropriate resampling to select the best version created by each algorithm. Tuning. Find the best values for each hyperparameter (within a reasonable range). Compare the performance of the four final models you have created.\
-Use appropriate performance evaluation metric(s) for this classification task. A table would be a good way to display your comparison. Use at least one visualization illustrating your model results.

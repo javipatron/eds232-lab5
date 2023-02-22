@@ -23,7 +23,7 @@ table(kaggle_dat$genre)
 
 genre_dat <- kaggle_dat %>%
   select(-c(type, uri, track_href, analysis_url, `Unnamed: 0`, title, tempo, id, song_name)) %>%
-  filter(genre == "Hiphop"|genre == "Rap") %>%
+  filter(genre == "Hiphop"| genre == "Rap") %>%
   mutate(genre = str_replace(genre, "Hiphop", "hiphop")) %>%
   mutate(genre = str_replace(genre, "Rap", "rap")) %>%
   mutate(genre = as.factor(genre))
@@ -104,9 +104,7 @@ genre_cv
 doParallel::registerDoParallel() #build trees in parallel
 #200s
 
-tree_rs <- tune_grid(
-  tree_spec_tune,
-  genre ~ . , 
+tree_rs <- tune_grid(tree_spec_tune, genre ~ . , 
   resamples = genre_cv,
   grid = tree_grid,
   metrics = metric_set(accuracy)  # how to assess which is the best convination
@@ -116,6 +114,7 @@ tree_rs
 
 ```
 Use autoplot() to examine how different parameter configurations relate to accuracy 
+
 ```{r}
 autoplot(tree_rs) + theme_light()
 ```
@@ -135,7 +134,7 @@ final_tree <- finalize_model(tree_spec_tune,
 This model has not been fit yet though.
 
 ```{r final_tree_fit}
-final_model_fit <- last_fit(finak_tree, genre ~ ., genre_split)
+final_model_fit <- last_fit(finak_tree, genre ~ . , genre_split)
 
 final_tree_fit$.predictions
 
@@ -145,3 +144,6 @@ final_tree_fit$.predictions
 ```{r tree_vip}
 final_tree_fit 
 ```
+
+
+

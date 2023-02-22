@@ -107,7 +107,6 @@ knn_res <- knn_workflow |>
 ```
 
 # Check the performance
-
 ```{r}
 collect_metrics(knn_res)
 ```
@@ -144,7 +143,6 @@ To tune our hyperparameter(s), we will use the tune_grid() function (instead of 
 This tune_grid() is similar to fit_resamples() except that it takes an additional argument: grid. We will pass the possible values of our hyperparameter(s) to this grid argument, and it will evaluate each fold of our sample on each set of hyperparameters passed to grid.
 
 ```{r evaluate_model}
-
 #knn_fit 
 
 ```
@@ -178,8 +176,7 @@ final_fit <- final_wf |>
 final_fit
 ```
 
-And finally, we can predict onto the testing dataset.
-
+And finally, we can predict onto the testing data set.
 ```{r}
 churn_pred <- final_fit |> 
   predict(new_data = churn_test)
@@ -187,7 +184,7 @@ churn_pred <- final_fit |>
 churn_pred %>% head()
 ```
 
-There's a better way! You can pass your final workflow (workflow plus the best model) to the last_fit() function along with your initial split (for us: churn_split) to both (a) fit your final model on your full training dataset and (b) make predictions onto the testing dataset (defined in your initial split object).
+There's a better way! You can pass your final workflow (workflow plus the best model) to the last_fit() function along with your initial split (for us: churn_split) to both (a) fit your final model on your full training data set and (b) make predictions onto the testing data set (defined in your initial split object).
 
 This last_fit() approach streamlines your work (combining steps) and also lets you easily collect metrics using the collect_metrics() function
 
@@ -198,4 +195,5 @@ final_fit <- final_wf |>
 
 # Collect metrics on the test data!
 final_fit |> collect_metrics()
+
 ```
